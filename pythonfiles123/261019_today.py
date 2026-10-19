@@ -1,0 +1,5 @@
+print("fist_python")
+print("온도측정값_")
+print(75)
+print("github는 저장소")
+print("add .은 저장, git commit ~ 은 기록설명, git log 는 정리록")
