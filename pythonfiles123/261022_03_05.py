@@ -23,3 +23,27 @@ print(word.split(","))
 #실습4 나누는 횟수 제한하기
 word="a,b,c,d"
 print(word.split(",",1))
+
+#실습5 리스트 합치기
+split_data = ["2025","01","15"] 
+print( "-".join(split_data)) 
+
+#실습6 sep으로 이어 출력하기
+print("2025","01","15",sep="-") 
+print("2025","01","15",sep=",") 
+
+#실습7 구분자 통째로 바꾸기
+date="2025/10/15"
+print(date)
+date= date.split("/")
+print(date)
+date= '-'.join(date)
+print(date)
+
+#실습8
+text="1,NORMAL,25.3"
+text2=text.split(",")
+text3=text2[1].strip().lower()
+print(text3)
+
+
