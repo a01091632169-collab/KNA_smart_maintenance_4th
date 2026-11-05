@@ -54,10 +54,10 @@ print("처리한파일:",done) #처리한 파일 수만 출력
 def check_value(text, lo=0.0, hi=5000.0):
     v = float(text)
     if not (lo < v < hi) :  #범위 밖이면 valueError 발생
-        raise ValueError(f'정상 범위 밖: {v}')
-    return v
+        raise ValueError(f'정상 범위 밖: {v}') #괄호안에 오류메시지를 담음
+    return v      #여기까지 함수 정의
 for t in ["128.5","결측","-999"]:
     try:
         print("통과:", check_value(t))
-    except ValueError as e:
+    except ValueError as e: #e가 위에 괄호안 내용
         print("제외", e)
