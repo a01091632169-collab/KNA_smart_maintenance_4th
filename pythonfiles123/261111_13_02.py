@@ -31,7 +31,7 @@ df = pd.read_csv('data/13_diecasting_shot.csv')
 sorted = df.sort_values("비스킷두께", ascending=False)
 print(sorted["샷"].head(5).tolist()) #[198, 192, 43, 171, 197] #비스킷두께 내림차순 정렬 후,상위 5개 행의 샷 번호를 리스트로 출력
 sorted2 = df.sort_values(["품질등급","사이클타임"],ascending=[True,False]) 
-#문자열에서 가나다순으 오름차순>True #품질등급 가나다순, 사이클타임 내림차순 정렬 
+#문자열에서 가나다순 내림차순>True #품질등급 가나다순, 사이클타임 내림차순 정렬 
 print(sorted2["샷"].head(5).tolist()) #[200, 181, 182, 191, 196]
 
 print(df["샷"].head(5).tolist()) #원본의 앞5줄 [1, 2, 3, 4, 5]
